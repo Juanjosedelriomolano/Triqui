@@ -1,0 +1,99 @@
+\doxysection{Referencia del espacio de nombres triqui}
+\hypertarget{namespacetriqui}{}\label{namespacetriqui}\index{triqui@{triqui}}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetriqui_a312a470778c862297b595c5fd2b529c9}{minimax}} (board, depth, is\+\_\+maximizing, player, opponent)
+\item 
+\mbox{\hyperlink{namespacetriqui_a0c78d714d10cc5ad81d3f878147c739b}{minimax\+\_\+alpha\+\_\+beta}} (board, depth, is\+\_\+maximizing, player, opponent, alpha, beta)
+\item 
+\mbox{\hyperlink{namespacetriqui_a0617c050d14edcfecd6e4d724654d176}{check\+\_\+winner}} (board)
+\item 
+\mbox{\hyperlink{namespacetriqui_abb918cd88a70f4b6b3a2f3530e3e554d}{is\+\_\+board\+\_\+full}} (board)
+\item 
+\mbox{\hyperlink{namespacetriqui_a13b48ff3744af76103c1050024663572}{best\+\_\+move}} (board, player, opponent, use\+\_\+alpha\+\_\+beta)
+\item 
+\mbox{\hyperlink{namespacetriqui_a0858eb9bc303975762dcb461b7463002}{start\+\_\+game}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de funciones}
+\Hypertarget{namespacetriqui_a13b48ff3744af76103c1050024663572}\index{triqui@{triqui}!best\_move@{best\_move}}
+\index{best\_move@{best\_move}!triqui@{triqui}}
+\doxysubsubsection{\texorpdfstring{best\_move()}{best\_move()}}
+{\footnotesize\ttfamily \label{namespacetriqui_a13b48ff3744af76103c1050024663572} 
+triqui.\+best\+\_\+move (\begin{DoxyParamCaption}\item[{}]{board}{, }\item[{}]{player}{, }\item[{}]{opponent}{, }\item[{}]{use\+\_\+alpha\+\_\+beta}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determina la mejor jugada para la IA utilizando Minimax o Minimax con Alpha-Beta Pruning.
+
+:param board: Lista que representa el estado actual del tablero.
+:param player: Símbolo del jugador actual.
+:param opponent: Símbolo del oponente.
+:param use_alpha_beta: Booleano que indica si se debe usar Alpha-Beta Pruning.
+:return: El índice de la mejor jugada en el tablero.
+\end{DoxyVerb}
+ \Hypertarget{namespacetriqui_a0617c050d14edcfecd6e4d724654d176}\index{triqui@{triqui}!check\_winner@{check\_winner}}
+\index{check\_winner@{check\_winner}!triqui@{triqui}}
+\doxysubsubsection{\texorpdfstring{check\_winner()}{check\_winner()}}
+{\footnotesize\ttfamily \label{namespacetriqui_a0617c050d14edcfecd6e4d724654d176} 
+triqui.\+check\+\_\+winner (\begin{DoxyParamCaption}\item[{}]{board}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verifica si hay un ganador
+
+:param board: Lista que representa el estado actual del tablero.
+:return: El símbolo del ganador si hay uno, None si no hay ganador.
+\end{DoxyVerb}
+ \Hypertarget{namespacetriqui_abb918cd88a70f4b6b3a2f3530e3e554d}\index{triqui@{triqui}!is\_board\_full@{is\_board\_full}}
+\index{is\_board\_full@{is\_board\_full}!triqui@{triqui}}
+\doxysubsubsection{\texorpdfstring{is\_board\_full()}{is\_board\_full()}}
+{\footnotesize\ttfamily \label{namespacetriqui_abb918cd88a70f4b6b3a2f3530e3e554d} 
+triqui.\+is\+\_\+board\+\_\+full (\begin{DoxyParamCaption}\item[{}]{board}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verifica si el tablero está lleno
+
+:param board: Lista que representa el estado actual del tablero.
+:return: Booleano que indica si el tablero está lleno.
+\end{DoxyVerb}
+ \Hypertarget{namespacetriqui_a312a470778c862297b595c5fd2b529c9}\index{triqui@{triqui}!minimax@{minimax}}
+\index{minimax@{minimax}!triqui@{triqui}}
+\doxysubsubsection{\texorpdfstring{minimax()}{minimax()}}
+{\footnotesize\ttfamily \label{namespacetriqui_a312a470778c862297b595c5fd2b529c9} 
+triqui.\+minimax (\begin{DoxyParamCaption}\item[{}]{board}{, }\item[{}]{depth}{, }\item[{}]{is\+\_\+maximizing}{, }\item[{}]{player}{, }\item[{}]{opponent}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementa el algoritmo Minimax para determinar la mejor jugada.
+
+:param board: Lista que representa el estado actual del tablero.
+:param depth: Profundidad actual en el árbol de búsqueda.
+:param is_maximizing: Booleano que indica si el jugador actual está maximizando su puntaje.
+:param player: Símbolo del jugador actual.
+:param opponent: Símbolo del oponente.
+:return: La puntuación de la mejor jugada posible.
+\end{DoxyVerb}
+ \Hypertarget{namespacetriqui_a0c78d714d10cc5ad81d3f878147c739b}\index{triqui@{triqui}!minimax\_alpha\_beta@{minimax\_alpha\_beta}}
+\index{minimax\_alpha\_beta@{minimax\_alpha\_beta}!triqui@{triqui}}
+\doxysubsubsection{\texorpdfstring{minimax\_alpha\_beta()}{minimax\_alpha\_beta()}}
+{\footnotesize\ttfamily \label{namespacetriqui_a0c78d714d10cc5ad81d3f878147c739b} 
+triqui.\+minimax\+\_\+alpha\+\_\+beta (\begin{DoxyParamCaption}\item[{}]{board}{, }\item[{}]{depth}{, }\item[{}]{is\+\_\+maximizing}{, }\item[{}]{player}{, }\item[{}]{opponent}{, }\item[{}]{alpha}{, }\item[{}]{beta}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementa el algoritmo Minimax con Alpha-Beta Pruning para mejorar la eficiencia de la búsqueda.
+
+:param board: Lista que representa el estado actual del tablero.
+:param depth: Profundidad actual en el árbol de búsqueda.
+:param is_maximizing: Booleano que indica si el jugador actual está maximizando su puntaje.
+:param player: Símbolo del jugador actual.
+:param opponent: Símbolo del oponente.
+:param alpha: El mejor valor encontrado hasta ahora para el jugador maximizador.
+:param beta: El mejor valor encontrado hasta ahora para el jugador minimizador.
+:return: La puntuación de la mejor jugada posible.
+\end{DoxyVerb}
+ \Hypertarget{namespacetriqui_a0858eb9bc303975762dcb461b7463002}\index{triqui@{triqui}!start\_game@{start\_game}}
+\index{start\_game@{start\_game}!triqui@{triqui}}
+\doxysubsubsection{\texorpdfstring{start\_game()}{start\_game()}}
+{\footnotesize\ttfamily \label{namespacetriqui_a0858eb9bc303975762dcb461b7463002} 
+triqui.\+start\+\_\+game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Inicia el juego
+
+Configura la interfaz gráfica del juego y maneja la lógica del juego.
+\end{DoxyVerb}
+ 
